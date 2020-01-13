@@ -1,12 +1,19 @@
 var sentence = prompt("Enter a sentence");
+
 console.log(sentence);
 
 var firstLetter = sentence.charAt(0);
-console.log(firstLetter);
+var lastLetter = sentence.charAt(sentence.length-1);
 
-var bigLetter = firstLetter.toUpperCase();
+console.log(firstLetter, lastLetter);
 
+var firstLast;
+function capitalize(firstLetter, lastLetter) {
+  return firstLast = (firstLetter + lastLetter).toUpperCase();
+};
 
-var newSentence = sentence.replace(firstLetter, bigLetter);
+capitalize(firstLetter, lastLetter);
 
-alert(newSentence);
+console.log(firstLast);
+
+alert(firstLast);
